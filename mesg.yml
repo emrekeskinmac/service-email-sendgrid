@@ -1,0 +1,43 @@
+name: "Email Sendgrid"
+description: "Send Email with Sendgrid"
+tasks: 
+  send:
+    description: "Send email with Sendgrid"
+    inputs:
+      apiKey:
+        name: "Sendgrid API Key"
+        description: "The Sendgrid API key that you can create here https://app.sendgrid.com/settings/api_keys​."
+        type: String
+      from:
+        name: "From"
+        description: "The account to send the email from"
+        type: String
+      to:
+        name: "To"
+        description: "The recipient of the email"
+        type: String
+      subject:
+        name: "Subject"
+        description: "The subject of the email"
+        type: String
+      text:
+        name: "Text"
+        description: "The text of the email"
+        type: String
+    outputs:
+      success:
+        name: "Success"
+        description: "When the email is successfully sent"
+        data:
+          status:
+            name: "Status"
+            description: "Status returned by the Sendgrid API"
+            type: Number
+      failure:
+        name: "Failure"
+        description: "when an error occurs when trying to send the email (this can be any kind of error, wrong email, Sendgrid API down...)"
+        data:
+          message:
+            name: "Message"
+            description: "Error message"
+            type: String
