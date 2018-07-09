@@ -21,4 +21,4 @@ mesg-core service deploy https://github.com/mesg-foundation/service-email-sendgr
 | ouput | description |
 | --- | --- |
 | success | When the email is successfully sent |
-| failure | when an error occurs when trying to send the email (this can be any kind of error, wrong email, Sendgrid API down...) |
+| failure | When an error occurs while trying to send the email (this can be any kind of error such as, a wrong email address, Sendgrid API down, etc...) |
