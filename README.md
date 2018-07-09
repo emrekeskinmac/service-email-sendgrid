@@ -11,7 +11,7 @@ mesg-core service deploy https://github.com/mesg-foundation/service-email-sendgr
 #### inputs
 | input | type | description |
 | --- | --- | --- |
-| apiKey | String | The Sendgrid API key that you can create here https://app.sendgrid.com/settings/api_keys |
+| apiKey | String | The Sendgrid API key. If needed, you can create here: https://app.sendgrid.com/settings/api_keys |
 | from | String | The account to send the email from |
 | to | String | The recipient of the email |
 | subject | String | The subject of the email |
