@@ -24,6 +24,12 @@ tasks:
         name: "Text"
         description: "The text of the email"
         type: String
+        optional: true
+      html:
+        name: "HTML"
+        description: "The html content of the email"
+        type: String
+        optional: true
     outputs:
       success:
         name: "Success"
