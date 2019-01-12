@@ -1,4 +1,5 @@
 name: "Email Sendgrid"
+sid: email-sendgrid
 description: "Send Email with Sendgrid"
 tasks: 
   send:
